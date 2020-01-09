@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Update mypeople
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="background">
+  
+  <ion-card>
+
+    <ion-card-header>
+      Create new Post
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Your message:</ion-label>
+        <ion-input [(ngModel)]="model.message" name="message"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="stacked">Image url:</ion-label>
+        <ion-input [(ngModel)]="model.imageUrl" name="imageUrl"></ion-input>
+      </ion-item>
+    
+      <ion-button (click)="sendPost();" expand="block" size="medium" color="tertiary">Submit Post</ion-button>
+    
+    </ion-card-content>
+  </ion-card>
+</ion-content>
